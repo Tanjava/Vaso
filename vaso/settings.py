@@ -30,7 +30,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['8000-tanjava-vaso-l1ty87bqb7v.ws-eu108.gitpod.io', 'vaso-a123ae0ee468.herokuapp.com']
+ALLOWED_HOSTS = ['vaso-a123ae0ee468.herokuapp.com', '8000-tanjava-vaso-l1ty87bqb7v.ws-eu108.gitpod.io']
 
 
 # Application definition
@@ -127,6 +127,9 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATIC_URL = '/static/'
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
 MEDIA_URL = '/media/'
 
 # Default primary key field type
