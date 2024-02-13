@@ -1,1 +1,1 @@
-web: gunicorn thevenue.wsgi
+web: gunicorn vaso.wsgi
